@@ -1,0 +1,35 @@
+# Build output
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Generated captures and replay output
+output*/
+replay_output*/
+*.csv
+*_snapshots.jsonl
+
+# Object files / libraries / executables
+*.o
+*.a
+*.so
+*.out
+binance_capture
+unit_tests
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets/config overrides (this project should not need credentials)
+.env
+config/secrets.json
+# Allow deliberately selected submission samples to be committed.
+!sample/*.csv
+!sample/*_snapshots.jsonl
